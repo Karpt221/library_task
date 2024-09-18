@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <button class="add-book-btn">Add Book</button>
+    <dialog class="add-book-modal">
+        <form method="dialog" class="add-book-form" action="">
+            <div>
+                <button class="close-add-form" type="button"><img src="icons/close-thick.svg" alt=""></button>
+                <h4>Write book info</h4>
+            </div>
+            <label for="title">Title:  <input required type="text" name="title" id="title"></label>
+            <label for="author">Author: <input required type="text" name="author" id="author"></label>
+            <label for="numofpages">Number of pages: <input required min="1" value="1" type="number" name="numofpages" id="numofpages"></label>
+            <label for="readstatus">Read status: <input type="checkbox" name="readstatus" id="readstatus"></label>
+            <button type="submit">Add book</button>
+        </form>
+    </dialog>
+    <div class="books-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

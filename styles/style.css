@@ -1,0 +1,43 @@
+@import url(resets.css);
+
+.card{
+    background-color: darkgrey;
+    border: 1px solid black;
+    margin: 20px 0;
+    width: 200px;
+}
+::backdrop {
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.add-book-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    & div{
+        display: grid;
+        & h4{
+            justify-self: center;
+        }
+    }
+    & input:not(input[type='checkbox']){
+        width: 100%;
+    }
+
+    & button[type='submit']{
+        align-self: center;
+    }
+    & .close-add-form{
+        justify-self: flex-end;
+        border: none;
+        background: none;
+        cursor: pointer;
+        & img{
+            width: 20px;
+        }
+        
+    }
+}
+
